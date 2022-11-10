@@ -5,6 +5,7 @@ import { mockDataTeam } from '../../data/mockData';
 import { AdminPanelSettingsOutlined, LockOpenOutlined, SecurityOutlined } from '@mui/icons-material';
 import Header from '../../components/Header';
 
+
 const Team = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
@@ -12,8 +13,31 @@ const Team = () => {
     return (
         <Box m="20px">
             <Header title="TEAM" subtitle="Managing your team members" />
-            <Box m="40px 0 0 0" height="75vh">
+            <Box m="40px 0 0 0" height="75vh" sx={{ 
+                "& .MuiDataGrid-root": {
+                    border: "none",
+                },
+                "& .MuiDataGrid-cell": {
+                    borderBottom: "none",
+                },
+                "& .name-column--cell": {
+                    color: colors.greenAccent[300],
+                },
+                "& .MuiDataGrid-columnHeaders": {
+                    backgroundColor: colors.blueAccent[700],
+                    borderBottom: "none",
+                    fontSize: "14px",
+                },
+                "& .MultiDataGrid-virtualScroller": {
+                    backgroundColor: colors.primary[400],
+                },
+                "& .MuiDataGrid-footerContainer": {
+                    borderTop: "none",
+                    backgroundColor: colors.blueAccent[700],
+                },
+             }}>
                 <DataGrid
+                    rowHeight={55}
                     rows={mockDataTeam}
                     columns={[
                         { field: 'id', headerName: 'ID' },
