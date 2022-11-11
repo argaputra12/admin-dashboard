@@ -6,7 +6,7 @@ import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Contact from "./scenes/contacts";
-// import Invoices from "./scenes/invoices";
+import Invoices from "./scenes/invoices";
 // import Bar from "./scenes/bar";
 // import Form from "./scenes/form";
 // import Line from "./scenes/line";
@@ -14,8 +14,6 @@ import Contact from "./scenes/contacts";
 // import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
 // import Calendar from "./scenes/calendar";
-
-import Header from "./components/Header";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,8 +30,8 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/teams" element={<Team />} />
               <Route path="/contacts" element={<Contact />} />
-              {/* <Route path="/invoices" element={<Invoices />} />
-              <Route path="/bar" element={<Bar />} />
+              <Route path="/invoices" element={<Invoices />} />
+              {/* <Route path="/bar" element={<Bar />} />
               <Route path="/form" element={<Form />} />
               <Route path="/line" element={<Line />} />
               <Route path="/pie" element={<Pie />} />
