@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Toolbar } from '@mui/material';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { tokens } from '../../theme';
 import { mockDataContacts } from '../../data/mockData';
@@ -6,7 +6,7 @@ import { useTheme } from '@mui/material';
 import Header from '../../components/Header';
 
 
-const Team = () => {
+const Contact = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
@@ -41,16 +41,18 @@ const Team = () => {
              }}>
                 <DataGrid
                     rowHeight={55}
-                    rows={mockDataTeam}
+                    rows={mockDataContacts}
+                    components={{ Toolbar: GridToolbar }}
                     columns={[
                         { field: 'id', headerName: 'ID' },
-                        { field: 'name', headerName: 'Name', flex: 0.5,cellClassName: "name-column--cell", headerAlign: 'center' },
-                        { field: 'age', headerName: 'Age', type: 'number', headerAlign: 'left', align: 'left' },
+                        { field: 'name', headerName: 'Name', flex: 1,cellClassName: "name-column--cell", headerAlign: 'center' },
+                        { field: 'age', headerName: 'Age', type: 'number', headerAlign: 'left', align: 'left', flex: 0.5 },
                         { field: 'phone', headerName: 'Phone Number', flex: 1 },
-                        { field: 'email', headerName: 'Email', flex: 1 },
-                        { field: 'address', headerName: 'Address', flex: 1 },
-                        { field: 'zipcode', headerName: 'Zip Code', flex: 1 },
-                        { field: 'access', headerName: 'Role', flex: 1, headerAlign: 'center' },
+                        { field: 'email', headerName: 'Email', flex: 2 },
+                        { field: 'address', headerName: 'Address', flex: 2 },
+                        { field: 'city', headerName: 'City', flex: 1 },
+                        { field: 'zipCode', headerName: 'Zip Code', flex: 1 },
+                        { field: 'registrarId', headerName: 'Register ID', flex: 1, headerAlign: 'center' },
                     ]}
                     />
             </Box>
@@ -58,4 +60,4 @@ const Team = () => {
     )
 }
 
-export default Team
+export default Contact
