@@ -108,6 +108,7 @@ const Form = () => {
                                 id="password"
                                 label="Password"
                                 name="password"
+                                type="password"
                                 variant="outlined"
                                 value={values.password}
                                 onChange={handleChange}
@@ -140,23 +141,33 @@ const Form = () => {
                                 helperText={touched.city && errors.city}
                                 sx={{ gridColumn: "span 4" }}
                             />
-                            <Button
-                                fullWidth
-                                variant="contained"
-                                type="submit"
-                                disabled={isSubmitting}
+                            <Box
+                                display="flex"
+                                justifyContent="flex-end"
+                                width="100%"
+                                gridColumn="span 4"
                                 sx={{
-                                    gridColumn: "span 4",
-                                    height: "50px",
-                                    backgroundColor: colors.greenAccent[500],
-                                    color: colors.primary,
-                                    "&:hover": {
-                                        backgroundColor: colors.primary,
-                                    },
-                                }}
+                                    marginTop: "20px", 
+                                    "& > button:hover": {
+                                        backgroundColor: colors.greenAccent[700],
+                                        color: colors.grey[100]
+                                    }
+                                 }}
                             >
-                                <Typography variant='h3' color={colors.primary} >Submit</Typography>
-                            </Button>
+                                <Button
+                                    variant="contained"
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    sx={{
+                                        height: "40px",
+                                        width: "200px",
+                                        backgroundColor: colors.greenAccent[500],
+                                        color: colors.grey[800],
+                                    }}
+                                >
+                                    Create new user
+                                </Button>
+                            </Box>
 
                         </Box>
                     </form>

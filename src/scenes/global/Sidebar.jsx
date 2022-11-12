@@ -165,7 +165,7 @@ const Sidebar = () =>{
                             Pages
                         </Typography>
                         <Item
-                            title="Profile"
+                            title="Create User"
                             to="/form"
                             icon={<PersonOutlined/>}
                             selected={selected}
