@@ -35,6 +35,9 @@ const Contact = () => {
                 "& .MuiCheckbox-root": {
                     color: colors.greenAccent[300],
                 },
+                "& .MuiCheckbox-colorSecondary.Mui-checked": {
+                    color: colors.greenAccent[300],
+                },
                 "& .name-column--cell": {
                     color: colors.greenAccent[300],
                 },
