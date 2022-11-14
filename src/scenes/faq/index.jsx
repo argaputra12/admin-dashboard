@@ -27,7 +27,7 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography color={colors.greenAccent[500]} variant="h4">
-                        What is the purpose of this website?
+                        How do I use this tool?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -39,7 +39,7 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography color={colors.greenAccent[500]} variant="h4">
-                        What is the purpose of this website?
+                        When will the theme generator be released?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -51,7 +51,7 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography color={colors.greenAccent[500]} variant="h4">
-                        What is the purpose of this website?
+                        How do I use this website?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -63,7 +63,7 @@ const FAQ = () => {
             <Accordion defaultExpanded>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                     <Typography color={colors.greenAccent[500]} variant="h4">
-                        What is the purpose of this website?
+                        Where can I find the source code for this website?
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
