@@ -9,7 +9,7 @@ import Contact from "./scenes/contacts";
 import Invoices from "./scenes/invoices";
 import Form from "./scenes/form";
 import Bar from "./scenes/bar";
-// import Line from "./scenes/line";
+import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
 import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
@@ -33,7 +33,7 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/charts/bar" element={<Bar />} />
-              {/* <Route path="/line" element={<Line />} /> */}
+              <Route path="/charts/line" element={<Line />} />
               {/* <Route path="/pie" element={<Pie />} /> */}
               <Route path="/faq" element={<FAQ />} />
               {/* <Route path="/geography" element={<Geography />} /> */}
